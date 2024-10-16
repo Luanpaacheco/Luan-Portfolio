@@ -9,8 +9,10 @@ const App=()=> {
 
   return (
     <>
+      <div className="bg-[#161513]  w-screen h-full">
+        <Home/>
+      </div>
       
-      <Home/>
     </>
   )
 }
