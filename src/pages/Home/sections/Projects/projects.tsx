@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './Projects.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import {gsap} from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import html from '../../../../assets/html-5.png'
 
@@ -27,11 +29,28 @@ const Projects: React.FC = () => {
         },
     ];
 
+    const eelementoReff = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger)
+  useLayoutEffect(()=>{
+    gsap.to(eelementoReff.current, {
+      y:0,
+      opacity:1,
+      scrollTrigger:{
+        trigger:eelementoReff.current,
+        markers:false
+      }
+      
+    })
+    return()=>{
+      gsap.killTweensOf(eelementoReff.current)
+    }
+  }, [])
     return (
         <>
         <div>
         
-        <div className=' pt-7'>
+        <div id="projects" ref={eelementoReff} className='translate-y-[500px] opacity-0 pt-7'>
 
         <h1 className='text-4xl font-bold text-center bg-gradient-to-r from-[#6148ac] to-[#6312d6] bg-clip-text text-transparent'>Projects</h1>
             <Swiper

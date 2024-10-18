@@ -16,7 +16,7 @@ const NavBar=()=> {
                 <li><a href="#home" className="text-sm hover:text-[#6148ac]">Home</a></li>
                 <li><a href="#aboutme" className="text-sm hover:text-[#6148ac]">About me</a></li>
                 <li><a href="#projects" className="text-sm hover:text-[#6148ac]">Projects</a></li>
-                <li><a href="#experience" className="text-sm hover:text-[#6148ac]">Experience</a></li>
+                <li><a href="#knowhow" className="text-sm hover:text-[#6148ac]">Know-How</a></li>
                 <li><a href="#contact" className="text-sm hover:text-[#6148ac]">Contact</a></li>
             </ul>
         </nav>
