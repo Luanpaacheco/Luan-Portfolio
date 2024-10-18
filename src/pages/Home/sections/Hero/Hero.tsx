@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef,useState } from 'react'
 
 import avatar from "./perfil.png"
 
@@ -10,7 +10,7 @@ import linkedin from './logotipo-do-linkedin.png'
 
 
 const Hero=()=> {
-   
+  const elementoRef = useRef(null);
 
   return (
     // <div className="bg-[#161513] text-white text-center  w-screen h-screen">
@@ -27,13 +27,14 @@ const Hero=()=> {
       <div className=" hover:scale-125 duration-300 text-xs rounded-lg  text-slate-50 text-left font-semibold">
         <img className='h-8'src={aspas} alt="" />
       I have not failed.<br></br> 
-I've just found 10,000 ways that won't<br></br> work.<div className='text-sm w-full flex justify-end pt-1'>Thomas endson</div> 
+I've just found 10,000 ways that won't<br></br> work.<div className='text-sm w-full flex justify-end pt-1'>Thomas Edison</div> 
         </div>
         <div className="flex items-center h-[28rem]">
 
           <img
             src={avatar}
             alt="Luan profile"
+            ref={elementoRef}
             className="h-[32rem] 
             "
           />

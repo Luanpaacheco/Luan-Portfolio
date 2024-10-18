@@ -4,6 +4,8 @@ import About from './sections/About/About'
 import Projects from './sections/Projects/projects'
 import NavBar from './sections/navigateBar/NavBar'
 import HardSkill from './sections/HardSkills/HardSkilss'
+import Contact from './sections/Contact/Contact'
+import Signature from './sections/Signature/Signature'
 
 
 
@@ -13,11 +15,14 @@ const Home=()=> {
 
   return (
     <>
-    <HardSkill/>
-    {/* <NavBar/>
+    
+    <NavBar/>
     <Hero/>
     <About/>
-   <Projects/> */}
+   <Projects/>
+   <HardSkill/>
+   <Contact/>
+   <Signature/>
     </>
   )
 }
