@@ -15,7 +15,7 @@ const Hero = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   useLayoutEffect(() => {
-    // Animação do botão com efeito de quicar
+
     gsap.to(elementoRef.current, {
       delay: 2.5,
       y: 0,
@@ -24,13 +24,13 @@ const Hero = () => {
       ease: "bounce.out"
     });
 
-    // Efeito de digitação
+
     gsap.to(textoRef.current, {
       text: "I'm <span style='background: linear-gradient(to right, #6148ac, #6312d6); -webkit-background-clip: text; color: transparent;'>Luan</span>, <br/>Software Engineer",
       duration: 1.5,
       ease: "none",
       delay: 0.5,
-      parseTransform: true // Permite que o GSAP interprete HTML no texto
+      parseTransform: true 
     });
 
     return () => {
