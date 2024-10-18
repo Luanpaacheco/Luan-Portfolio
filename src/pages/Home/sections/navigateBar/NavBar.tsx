@@ -1,7 +1,4 @@
-import { useState } from 'react'
-import programacao from './codigo.png'
-import familia from './familia.png'
-import futebol from './futebol.png'
+
 import signature from '../../../../assets/signature.svg'
 
 

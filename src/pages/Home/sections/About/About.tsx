@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useLayoutEffect, useRef} from 'react'
 import programacao from './codigo.png'
 import familia from './familia.png'
 import futebol from './futebol.png'
