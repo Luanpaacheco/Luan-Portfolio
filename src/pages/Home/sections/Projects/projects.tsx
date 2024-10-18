@@ -14,13 +14,28 @@ const Projects: React.FC = () => {
     const projects = [
         {
             image: html,
-            title: 'Calculadora',
-            link: 'https://github.com/gabrielahf/Calculadora',
+            title: 'Calculator',
+            link: 'https://github.com/Luanpaacheco/BEAUTIFUL-CALCULATOR',
         },
         {
             image: html,
-            title: 'Conversor de Moedas',
-            link: 'https://github.com/gabrielahf/Conversor_Moedas',
+            title: 'Weather Forecast Web',
+            link: 'https://github.com/Luanpaacheco/Weather-Forecast-Web-App',
+        },
+        {
+            image: html,
+            title: 'Sports Federation Simulator',
+            link: 'https://github.com/Luanpaacheco/Sports-Federation-Simulator',
+        },
+        {
+            image: html,
+            title: 'Pokedex',
+            link: 'https://github.com/Luanpaacheco/POKEDEX-flask',
+        },
+        {
+            image: html,
+            title: 'InstaMovie',
+            link: 'https://github.com/Luanpaacheco/InstaMovie',
         },
         {
             image: 'Foto1',
