@@ -1,60 +1,39 @@
-/* Estilos gerais para o app */
-#app {
-    height: 100%;
-  }
-  
-  html,
-  body {
-    position: relative;
-    height: 100%;
+/* Estilos gerais para o Swiper */
+.swiper {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
+/* Customização para o slide */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide-custom {
+  @apply md:w-[300px] md:h-[300px] w-[200px] h-[200px];
+}
+
+/* Reduz o tamanho do slide no mobile */
+@media (max-width: 768px) {
+  .swiper-slide-custom {
+      width: 200px;
+      height: 200px;
   }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #121212;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para o Swiper */
-  .swiper {
-    width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-  
-  .projects-section {
-    text-align: center;
-    background-color: #121212;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 
 .slide-content {
-    text-align: center;
-    color: white; /* Define a cor do texto para branco */
-    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente */
-    padding: 10px;
-    border-radius: 8px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .slide-content h3 {
-    margin-top: 10px;
-    font-size: 1.25rem;
+  margin-top: 3px;
+  font-size: 1.25rem;
 }
