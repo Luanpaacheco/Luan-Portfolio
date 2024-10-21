@@ -15,7 +15,6 @@ const Hero = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   useLayoutEffect(() => {
-
     gsap.to(elementoRef.current, {
       delay: 2.5,
       y: 0,
@@ -24,13 +23,12 @@ const Hero = () => {
       ease: "bounce.out"
     });
 
-
     gsap.to(textoRef.current, {
       text: "I'm <span style='background: linear-gradient(to right, #6148ac, #6312d6); -webkit-background-clip: text; color: transparent;'>Luan</span>, <br/>Software Engineer",
       duration: 1.5,
       ease: "none",
       delay: 0.5,
-      parseTransform: true 
+      parseTransform: true
     });
 
     return () => {
@@ -41,12 +39,10 @@ const Hero = () => {
 
   return (
     <div className='text-white text-center' id="home">
-      <div className="profile-content h-auto md:h-[40rem] flex flex-col md:flex-row items-center justify-center">
-        <div className="flex flex-col items-center h-full">
+      <div className="profile-content h-auto flex flex-col items-center justify-center md:flex-row md:h-[40rem]">
+        <div className="flex flex-col items-center md:h-full">
           <div className='hover:scale-110 duration-300 hover:cursor-default'>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold pt-8 md:pt-24" ref={textoRef}>
-            
-            </h1>
+            <h1 className="text-3xl sm:text-4xl pt-20 md:text-6xl font-bold  md:pt-24" ref={textoRef}></h1>
           </div>
           <div className="flex flex-col md:flex-row items-center h-full w-full md:w-fit px-4 md:pr-32">
             <div className="hover:scale-125 duration-300 text-xs rounded-lg text-slate-50 text-left font-semibold mb-4 md:mb-0">
@@ -60,10 +56,10 @@ const Hero = () => {
               <img
                 src={avatar}
                 alt="Luan profile"
-                className="h-[20rem] sm:h-[26rem] md:h-[32rem]"
+                className="h-[18rem] sm:h-[20rem] lg:h-[32rem] md:[]"
               />
             </div>
-            <div className="text-xl rounded-lg w-full md:w-fit flex gap-4 md:gap-8">
+            <div className="text-xl rounded-lg w-full md:w-fit flex gap-4 md:gap-8  mb-10 md:flex justify-center">
               <a href="https://github.com/Luanpaacheco" target="_blank" rel="noopener noreferrer">
                 <img className='h-8 hover:scale-125 duration-300' src={github} alt="GitHub" />
               </a>
@@ -83,6 +79,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
