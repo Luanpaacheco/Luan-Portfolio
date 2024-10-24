@@ -12,13 +12,10 @@ import mongodb from '../../../../assets/mongodb-2.png';
 import react from "../../../../assets/biblioteca.png";
 import java from "../../../../assets/javaC.png";
 import Javascript from '../../../../assets/script-java.png';
-import python from '../../../../assets/python.png';
 import css from '../../../../assets/css-3.png';
-import linux from '../../../../assets/plataforma-linux.png';
 import git from '../../../../assets/git.png';
 import typescript from '../../../../assets/typescript.png';
 import html from '../../../../assets/html-5.png';
-import docker from '../../../../assets/docker.png';
 import api from '../../../../assets/api.png';
 import projetoTempo from '../../../../assets/Projeto-tempo.png'
 import projetoCalculadora from '../../../../assets/Projeto-calculadora.png'
