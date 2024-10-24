@@ -121,7 +121,7 @@ const Projects: React.FC = () => {
                                             <img key={techIndex} src={tecImage} alt={`Tecnologia ${techIndex}`} className="tech-image w-5 h-5 " />
                                         ))}
                                     </div>
-                                    <h3 className=''>{project.title}
+                                    <h3 className='font-bold text-slate-300'>{project.title}
                                     <img src={github} alt="" className='h-3' /> 
                                     </h3>
                             
