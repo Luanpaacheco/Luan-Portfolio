@@ -73,7 +73,7 @@ const Hero = () => {
               Download CV
               <img className='h-4 md:h-5 ml-4' src={download} alt="Download CV" />
             </a>
-            <h2 className='px-4 md:px-6 text-lg'>Hire Me</h2>
+            <h2 className='px-3 md:px-5 text-lg'>Learn more</h2>
           </div>
         </div>
       </div>
